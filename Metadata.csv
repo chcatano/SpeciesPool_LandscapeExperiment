@@ -1,0 +1,17 @@
+Name of variable,Variable type,Description 
+CAREER_betapart_dbrda_2018_2022,,Compositional variation explained by soil resource gradient across all plots in a treatment
+year,integer,Year plant composition was sampled
+Pool,categorical,Species pool treatment: 2 levels (Low diveristy and High diversity)
+Seed.density,continuous,Immigration treatment (seeds added per m2)
+tot_dbra_r2,continuous,% Bray-Curtis dissimilarity in plant composition across plots explained by soil resources (R2 from distance-based redudancy analysis)
+gra_dbra_r2,continuous,% dissimilarity in plant composition due to abundance gradients explained by soil resources (R2 from distance-based redudancy analysis); Bray -Curtis dissimilarity is partitioned into balanced variation in abundance and abundance gradients
+bal_dbra_r2,continuous,% dissimilarity in plant composition due to balanced variation in abundance explained by soil resources (R2 from distance-based redudancy analysis); Bray -Curtis dissimilarity is partitioned into balanced variation in abundance and abundance gradients
+,,
+CAREER_betapart_1x1_2018_2022,,"Alpha and Beta diversity calculated from plant composition sampled across sites, plots, and years"
+year,integer,Year plant composition was sampled
+site,unique,site name: 12 sites with treatmetns and plots nested within
+plot,character,Plot number: corresponds to unique plots sampled within each site
+Pool,categorical,Species pool treatment: 2 levels (Low diveristy and High diversity)
+Seed.density,continuous,Immigration treatment (seeds added per m2)
+alpha.hill1,continuous,Plant species diversity in each 1m2 plot. Corresponds to the Diversity Hill numeber 1 (exp(Shannon entropy))
+beta.tot,continuous,Plant beta diveristy across 1m2 in each treatment. Calculated as the mean distance to centroid using Bray-Curtis dissimilarity
